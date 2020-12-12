@@ -13,18 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fernandocejas.sample.features.login
+package com.dre.loyalty.core.di.viewmodel
 
-import com.dre.loyalty.features.login.Authenticator
-import com.fernandocejas.sample.UnitTest
-import org.amshove.kluent.shouldBe
-import org.junit.Test
+import androidx.lifecycle.ViewModel
+import dagger.MapKey
+import kotlin.reflect.KClass
 
-class AuthenticatorTest : UnitTest() {
-
-    private val authenticator = Authenticator()
-
-    @Test fun `returns default value`() {
-        authenticator.userLoggedIn() shouldBe true
-    }
-}
+@MapKey
+@Target(AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY_GETTER, AnnotationTarget.PROPERTY_SETTER)
+internal annotation class ViewModelKey(val value: KClass<out ViewModel>)

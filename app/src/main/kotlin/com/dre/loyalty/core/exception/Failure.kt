@@ -13,18 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fernandocejas.sample.features.login
+package com.dre.loyalty.core.exception
 
-import com.dre.loyalty.features.login.Authenticator
-import com.fernandocejas.sample.UnitTest
-import org.amshove.kluent.shouldBe
-import org.junit.Test
+/**
+ * Base Class for handling errors/failures/exceptions.
+ * Every feature specific failure should extend [FeatureFailure] class.
+ */
+sealed class Failure {
+    object NetworkConnection : Failure()
+    object ServerError : Failure()
 
-class AuthenticatorTest : UnitTest() {
-
-    private val authenticator = Authenticator()
-
-    @Test fun `returns default value`() {
-        authenticator.userLoggedIn() shouldBe true
-    }
+    /** * Extend this class for feature specific failures.*/
+    abstract class FeatureFailure: Failure()
 }

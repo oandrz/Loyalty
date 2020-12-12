@@ -13,18 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fernandocejas.sample.features.login
+package com.dre.loyalty.features.movies
 
-import com.dre.loyalty.features.login.Authenticator
-import com.fernandocejas.sample.UnitTest
-import org.amshove.kluent.shouldBe
-import org.junit.Test
+import com.dre.loyalty.core.interactor.UseCase
+import com.dre.loyalty.features.movies.GetMovieDetails.Params
+import javax.inject.Inject
 
-class AuthenticatorTest : UnitTest() {
+class GetMovieDetails
+@Inject constructor(private val moviesRepository: MoviesRepository) : UseCase<MovieDetails, Params>() {
 
-    private val authenticator = Authenticator()
+    override suspend fun run(params: Params) = moviesRepository.movieDetails(params.id)
 
-    @Test fun `returns default value`() {
-        authenticator.userLoggedIn() shouldBe true
-    }
+    data class Params(val id: Int)
 }

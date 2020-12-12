@@ -13,18 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fernandocejas.sample.features.login
+package com.dre.loyalty.features.movies
 
-import com.dre.loyalty.features.login.Authenticator
-import com.fernandocejas.sample.UnitTest
-import org.amshove.kluent.shouldBe
-import org.junit.Test
+import android.content.Context
+import android.content.Intent
+import com.dre.loyalty.core.platform.BaseActivity
 
-class AuthenticatorTest : UnitTest() {
+class MoviesActivity : BaseActivity() {
 
-    private val authenticator = Authenticator()
-
-    @Test fun `returns default value`() {
-        authenticator.userLoggedIn() shouldBe true
+    companion object {
+        fun callingIntent(context: Context) = Intent(context, MoviesActivity::class.java)
     }
+
+    override fun fragment() = MoviesFragment()
 }

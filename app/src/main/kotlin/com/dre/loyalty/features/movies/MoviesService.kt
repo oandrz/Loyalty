@@ -13,18 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fernandocejas.sample.features.login
+package com.dre.loyalty.features.movies
 
-import com.dre.loyalty.features.login.Authenticator
-import com.fernandocejas.sample.UnitTest
-import org.amshove.kluent.shouldBe
-import org.junit.Test
+import retrofit2.Retrofit
+import javax.inject.Inject
+import javax.inject.Singleton
 
-class AuthenticatorTest : UnitTest() {
+@Singleton
+class MoviesService
+@Inject constructor(retrofit: Retrofit) : MoviesApi {
+    private val moviesApi by lazy { retrofit.create(MoviesApi::class.java) }
 
-    private val authenticator = Authenticator()
-
-    @Test fun `returns default value`() {
-        authenticator.userLoggedIn() shouldBe true
-    }
+    override fun movies() = moviesApi.movies()
+    override fun movieDetails(movieId: Int) = moviesApi.movieDetails(movieId)
 }

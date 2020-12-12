@@ -1,7 +1,7 @@
 package scripts
 
 import io.gitlab.arturbosch.detekt.Detekt
-import scripts.Variants_gradle.*
+import scripts.Variants_gradle.Default
 
 plugins {
     id("com.android.application") apply false

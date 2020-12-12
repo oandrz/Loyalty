@@ -16,8 +16,11 @@
 package com.fernandocejas.sample.features.movies
 
 import com.fernandocejas.sample.UnitTest
-import com.fernandocejas.sample.core.functional.Either.Right
-import com.fernandocejas.sample.core.interactor.UseCase
+import com.dre.loyalty.core.functional.Either.Right
+import com.dre.loyalty.core.interactor.UseCase
+import com.dre.loyalty.features.movies.GetMovies
+import com.dre.loyalty.features.movies.Movie
+import com.dre.loyalty.features.movies.MoviesRepository
 import io.mockk.every
 import io.mockk.impl.annotations.MockK
 import io.mockk.verify

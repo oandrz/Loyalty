@@ -1,6 +1,7 @@
 package scripts
 
-import scripts.Variants_gradle.*
+import BuildPlugins
+import scripts.Variants_gradle.Default
 import java.util.*
 
 tasks.register("clean", Delete::class){

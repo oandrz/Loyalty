@@ -16,9 +16,8 @@
 package com.fernandocejas.sample.core.interactor
 
 import com.fernandocejas.sample.AndroidTest
-import com.fernandocejas.sample.core.exception.Failure
-import com.fernandocejas.sample.core.functional.Either
-import com.fernandocejas.sample.core.functional.Either.Right
+import com.dre.loyalty.core.functional.Either.Right
+import com.dre.loyalty.core.interactor.UseCase
 import kotlinx.coroutines.runBlocking
 import org.amshove.kluent.shouldEqual
 import org.junit.Test

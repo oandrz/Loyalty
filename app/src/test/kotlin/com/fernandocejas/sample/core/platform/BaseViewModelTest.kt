@@ -17,8 +17,9 @@ package com.fernandocejas.sample.core.platform
 
 import androidx.lifecycle.MutableLiveData
 import com.fernandocejas.sample.AndroidTest
-import com.fernandocejas.sample.core.exception.Failure
-import com.fernandocejas.sample.core.exception.Failure.NetworkConnection
+import com.dre.loyalty.core.exception.Failure
+import com.dre.loyalty.core.exception.Failure.NetworkConnection
+import com.dre.loyalty.core.platform.BaseViewModel
 import org.amshove.kluent.shouldBeInstanceOf
 import org.junit.Test
 

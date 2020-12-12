@@ -16,9 +16,10 @@
 package com.fernandocejas.sample.core.functional
 
 import com.fernandocejas.sample.UnitTest
-import com.fernandocejas.sample.core.exception.Failure.ServerError
-import com.fernandocejas.sample.core.functional.Either.Left
-import com.fernandocejas.sample.core.functional.Either.Right
+import com.dre.loyalty.core.exception.Failure.ServerError
+import com.dre.loyalty.core.functional.*
+import com.dre.loyalty.core.functional.Either.Left
+import com.dre.loyalty.core.functional.Either.Right
 import org.amshove.kluent.shouldBe
 import org.amshove.kluent.shouldBeInstanceOf
 import org.amshove.kluent.shouldEqual

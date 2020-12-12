@@ -13,18 +13,22 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fernandocejas.sample.features.login
+package com.dre.loyalty.core.platform
 
-import com.dre.loyalty.features.login.Authenticator
-import com.fernandocejas.sample.UnitTest
-import org.amshove.kluent.shouldBe
-import org.junit.Test
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import com.dre.loyalty.core.exception.Failure
 
-class AuthenticatorTest : UnitTest() {
+/**
+ * Base ViewModel class with default Failure handling.
+ * @see ViewModel
+ * @see Failure
+ */
+abstract class BaseViewModel : ViewModel() {
 
-    private val authenticator = Authenticator()
+    private val _failure: MutableLiveData<Failure> = MutableLiveData()
+    val failure: LiveData<Failure> = _failure
 
-    @Test fun `returns default value`() {
-        authenticator.userLoggedIn() shouldBe true
-    }
+    protected fun handleFailure(failure: Failure) { _failure.value = failure }
 }

@@ -16,7 +16,11 @@
 package com.fernandocejas.sample.features.movies
 
 import com.fernandocejas.sample.AndroidTest
-import com.fernandocejas.sample.core.functional.Either.Right
+import com.dre.loyalty.core.functional.Either.Right
+import com.dre.loyalty.features.movies.GetMovieDetails
+import com.dre.loyalty.features.movies.MovieDetails
+import com.dre.loyalty.features.movies.MovieDetailsViewModel
+import com.dre.loyalty.features.movies.PlayMovie
 import io.mockk.coEvery
 import io.mockk.impl.annotations.MockK
 import kotlinx.coroutines.runBlocking

@@ -13,18 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fernandocejas.sample.features.login
+package com.dre.loyalty.core.extension
 
-import com.dre.loyalty.features.login.Authenticator
-import com.fernandocejas.sample.UnitTest
-import org.amshove.kluent.shouldBe
-import org.junit.Test
+import androidx.lifecycle.LifecycleOwner
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.Observer
+import com.dre.loyalty.core.exception.Failure
 
-class AuthenticatorTest : UnitTest() {
+fun <T : Any, L : LiveData<T>> LifecycleOwner.observe(liveData: L, body: (T?) -> Unit) =
+        liveData.observe(this, Observer(body))
 
-    private val authenticator = Authenticator()
-
-    @Test fun `returns default value`() {
-        authenticator.userLoggedIn() shouldBe true
-    }
-}
+fun <L : LiveData<Failure>> LifecycleOwner.failure(liveData: L, body: (Failure?) -> Unit) =
+        liveData.observe(this, Observer(body))

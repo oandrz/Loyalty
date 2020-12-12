@@ -15,10 +15,12 @@
  */
 package com.fernandocejas.sample.core.navigation
 
+import com.dre.loyalty.core.navigation.Navigator
+import com.dre.loyalty.core.navigation.RouteActivity
 import com.fernandocejas.sample.AndroidTest
-import com.fernandocejas.sample.features.login.Authenticator
-import com.fernandocejas.sample.features.login.LoginActivity
-import com.fernandocejas.sample.features.movies.MoviesActivity
+import com.dre.loyalty.features.login.Authenticator
+import com.dre.loyalty.features.login.LoginActivity
+import com.dre.loyalty.features.movies.MoviesActivity
 import com.fernandocejas.sample.shouldNavigateTo
 import io.mockk.every
 import io.mockk.impl.annotations.MockK

@@ -16,7 +16,8 @@
 package com.fernandocejas.sample.features.movies
 
 import com.fernandocejas.sample.AndroidTest
-import com.fernandocejas.sample.core.navigation.Navigator
+import com.dre.loyalty.core.navigation.Navigator
+import com.dre.loyalty.features.movies.PlayMovie
 import io.mockk.impl.annotations.MockK
 import io.mockk.verify
 import org.junit.Before

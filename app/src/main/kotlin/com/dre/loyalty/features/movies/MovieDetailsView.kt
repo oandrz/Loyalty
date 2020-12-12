@@ -13,18 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fernandocejas.sample.features.login
+package com.dre.loyalty.features.movies
 
-import com.dre.loyalty.features.login.Authenticator
-import com.fernandocejas.sample.UnitTest
-import org.amshove.kluent.shouldBe
-import org.junit.Test
-
-class AuthenticatorTest : UnitTest() {
-
-    private val authenticator = Authenticator()
-
-    @Test fun `returns default value`() {
-        authenticator.userLoggedIn() shouldBe true
-    }
-}
+data class MovieDetailsView(val id: Int,
+                                  val title: String,
+                                  val poster: String,
+                                  val summary: String,
+                                  val cast: String,
+                                  val director: String,
+                                  val year: Int,
+                                  val trailer: String)

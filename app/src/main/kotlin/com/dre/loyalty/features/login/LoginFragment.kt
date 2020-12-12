@@ -13,18 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fernandocejas.sample.features.login
+package com.dre.loyalty.features.login
 
-import com.dre.loyalty.features.login.Authenticator
-import com.fernandocejas.sample.UnitTest
-import org.amshove.kluent.shouldBe
-import org.junit.Test
+import com.fernandocejas.sample.R
+import com.dre.loyalty.core.platform.BaseFragment
 
-class AuthenticatorTest : UnitTest() {
-
-    private val authenticator = Authenticator()
-
-    @Test fun `returns default value`() {
-        authenticator.userLoggedIn() shouldBe true
-    }
+class LoginFragment : BaseFragment() {
+    override fun layoutId() = R.layout.fragment_login
 }

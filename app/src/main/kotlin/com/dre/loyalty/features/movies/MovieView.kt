@@ -13,18 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fernandocejas.sample.features.login
+package com.dre.loyalty.features.movies
 
-import com.dre.loyalty.features.login.Authenticator
-import com.fernandocejas.sample.UnitTest
-import org.amshove.kluent.shouldBe
-import org.junit.Test
+import android.os.Parcel
+import com.dre.loyalty.core.platform.KParcelable
+import com.dre.loyalty.core.platform.parcelableCreator
 
-class AuthenticatorTest : UnitTest() {
+data class MovieView(val id: Int, val poster: String) : KParcelable {
+    companion object {
+        @JvmField val CREATOR = parcelableCreator(::MovieView)
+    }
 
-    private val authenticator = Authenticator()
+    constructor(parcel: Parcel) : this(parcel.readInt(), parcel.readString()!!)
 
-    @Test fun `returns default value`() {
-        authenticator.userLoggedIn() shouldBe true
+    override fun writeToParcel(dest: Parcel, flags: Int) {
+        with(dest) {
+            writeInt(id)
+            writeString(poster)
+        }
     }
 }
