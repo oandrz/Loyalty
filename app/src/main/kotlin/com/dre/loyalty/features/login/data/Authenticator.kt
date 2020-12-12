@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.dre.loyalty.features.login
+package com.dre.loyalty.features.login.data
 
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -24,5 +24,5 @@ class Authenticator
     //Learning purpose: We assume the user is always logged in
     //Here you should put your own logic to return whether the user
     //is authenticated or not
-    fun userLoggedIn() = true
+    fun userLoggedIn() = false
 }

@@ -30,6 +30,10 @@ android {
     //TODO: Remove this when migrating the DI framework
     getByName("main") { java.srcDir("$buildDir/generated/source/kapt/main") }
   }
+
+  buildFeatures {
+    viewBinding = true
+  }
 }
 
 dependencies {

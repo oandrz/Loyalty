@@ -18,6 +18,7 @@ package com.dre.loyalty.core.di
 import com.dre.loyalty.AndroidApplication
 import com.dre.loyalty.core.di.viewmodel.ViewModelModule
 import com.dre.loyalty.core.navigation.RouteActivity
+import com.dre.loyalty.features.login.presentation.LoginFragment
 import com.dre.loyalty.features.movies.MovieDetailsFragment
 import com.dre.loyalty.features.movies.MoviesFragment
 import dagger.Component
@@ -29,6 +30,7 @@ interface ApplicationComponent {
     fun inject(application: AndroidApplication)
     fun inject(routeActivity: RouteActivity)
 
+    fun inject(fragment: LoginFragment)
     fun inject(moviesFragment: MoviesFragment)
     fun inject(movieDetailsFragment: MovieDetailsFragment)
 }

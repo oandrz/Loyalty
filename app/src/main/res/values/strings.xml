@@ -9,4 +9,5 @@
     <string name="failure_movie_non_existent">Movie Not Existent.</string>
 
     <string name="content_description_empty">No content description.</string>
+    <string name="loyalty_login_button_proceed">Proceed</string>
 </resources>

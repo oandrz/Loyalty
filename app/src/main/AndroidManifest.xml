@@ -29,7 +29,7 @@ xmlns:android="http://schemas.android.com/apk/res/android">
     </activity>
 
     <activity
-        android:name="com.dre.loyalty.features.login.LoginActivity"
+        android:name="com.dre.loyalty.features.login.presentation.LoginActivity"
         android:label="@string/login_screen_title">
     </activity>
 

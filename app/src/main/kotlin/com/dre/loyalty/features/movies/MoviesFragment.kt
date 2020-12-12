@@ -37,7 +37,7 @@ class MoviesFragment : BaseFragment() {
 
     private lateinit var moviesViewModel: MoviesViewModel
 
-    override fun layoutId() = R.layout.fragment_movies
+//    override fun layoutId() = R.layout.fragment_movies
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
