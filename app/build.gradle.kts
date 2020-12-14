@@ -34,6 +34,10 @@ android {
   buildFeatures {
     viewBinding = true
   }
+
+  kotlinOptions {
+    jvmTarget = JavaVersion.VERSION_1_8.toString()
+  }
 }
 
 dependencies {
@@ -61,6 +65,7 @@ dependencies {
   implementation(Libraries.dagger)
   implementation(Libraries.retrofit)
   implementation(Libraries.okHttpLoggingInterceptor)
+  implementation(Libraries.dataStore)
 
   // Unit/Android tests dependencies
   testImplementation(TestLibraries.junit4)

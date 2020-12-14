@@ -51,6 +51,7 @@ object Libraries {
         const val glide = "4.11.0"
         const val retrofit = "2.9.0"
         const val okHttpLoggingInterceptor = "4.9.0"
+        const val dataStore = "1.0.0-alpha05"
 
         //TODO: Legacy -> WIP -> Try Hilt?
         const val dagger = "2.11"
@@ -76,6 +77,7 @@ object Libraries {
     const val dagger                   = "com.google.dagger:dagger:${Versions.dagger}"
     const val retrofit                 = "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"
     const val okHttpLoggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${Versions.okHttpLoggingInterceptor}"
+    const val dataStore                = "androidx.datastore:datastore-preferences:${Versions.dataStore}"
 
     //TODO: Legacy -> WIP -> Migrate to Koin or Hilt?
     const val daggerCompiler   = "com.google.dagger:dagger-compiler:${Versions.dagger}"
