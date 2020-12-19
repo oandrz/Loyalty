@@ -66,6 +66,7 @@ dependencies {
   implementation(Libraries.retrofit)
   implementation(Libraries.okHttpLoggingInterceptor)
   implementation(Libraries.dataStore)
+  implementation(Libraries.pinView)
 
   // Unit/Android tests dependencies
   testImplementation(TestLibraries.junit4)

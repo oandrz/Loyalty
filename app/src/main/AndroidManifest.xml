@@ -39,6 +39,11 @@ xmlns:android="http://schemas.android.com/apk/res/android">
     </activity>
 
     <activity
+        android:name="com.dre.loyalty.features.pin.presentation.PinActivity"
+        android:label="@string/pin_screen_title">
+    </activity>
+
+    <activity
         android:name="com.dre.loyalty.features.movies.MovieDetailsActivity"
         android:label="@string/movie_details_screen_title"
         android:theme="@style/AppTheme.Translucent">

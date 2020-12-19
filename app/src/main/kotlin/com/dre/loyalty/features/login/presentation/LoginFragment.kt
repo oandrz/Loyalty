@@ -65,7 +65,7 @@ class LoginFragment : BaseFragment() {
         appComponent.inject(this)
         vm = viewModel(viewModelFactory) {
             observe(navigateMain) { _ ->
-                activity?.let { navigator.showMain(it) }
+                activity?.let { navigator.showPin(it) }
             }
         }
     }
@@ -83,7 +83,7 @@ class LoginFragment : BaseFragment() {
         super.onViewCreated(view, savedInstanceState)
         binding?.run {
             btnProceed.setOnClickListener {
-
+                vm.handleLoginButtonClicked()
             }
             etPhone.addTextChangedListener(phoneChangeListener)
         }

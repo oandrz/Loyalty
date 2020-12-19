@@ -29,6 +29,7 @@ import com.dre.loyalty.features.login.presentation.LoginActivity
 import com.dre.loyalty.features.movies.MovieDetailsActivity
 import com.dre.loyalty.features.movies.MovieView
 import com.dre.loyalty.features.movies.MoviesActivity
+import com.dre.loyalty.features.pin.presentation.PinActivity
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -78,6 +79,10 @@ class Navigator @Inject constructor(private val authenticator: Authenticator) {
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
 
         return intent
+    }
+
+    fun showPin(context: Context) {
+        context.startActivity(PinActivity.callingIntent(context))
     }
 
     class Extras(val transitionSharedElement: View)
