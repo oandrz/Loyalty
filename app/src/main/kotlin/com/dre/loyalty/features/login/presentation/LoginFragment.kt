@@ -19,7 +19,7 @@ import com.dre.loyalty.core.extension.observe
 import com.dre.loyalty.core.extension.viewModel
 import com.dre.loyalty.core.navigation.Navigator
 import com.dre.loyalty.core.platform.BaseFragment
-import com.fernandocejas.sample.databinding.FragmentLoginBinding
+import com.dre.loyalty.databinding.FragmentLoginBinding
 import kotlinx.android.synthetic.main.fragment_login.*
 import javax.inject.Inject
 

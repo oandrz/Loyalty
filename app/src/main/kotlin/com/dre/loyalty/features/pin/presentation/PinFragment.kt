@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.dre.loyalty.core.platform.BaseFragment
-import com.fernandocejas.sample.databinding.FragmentPinBinding
+import com.dre.loyalty.databinding.FragmentPinBinding
 
 class PinFragment : BaseFragment() {
 

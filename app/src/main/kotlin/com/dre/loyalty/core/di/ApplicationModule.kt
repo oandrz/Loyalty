@@ -17,8 +17,8 @@ package com.dre.loyalty.core.di
 
 import android.content.Context
 import com.dre.loyalty.AndroidApplication
+import com.dre.loyalty.BuildConfig
 import com.dre.loyalty.features.movies.MoviesRepository
-import com.fernandocejas.sample.BuildConfig
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient

@@ -19,7 +19,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.annotation.StringRes
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import com.fernandocejas.sample.R
+import com.dre.loyalty.R
 import com.dre.loyalty.core.exception.Failure
 import com.dre.loyalty.core.exception.Failure.NetworkConnection
 import com.dre.loyalty.core.exception.Failure.ServerError

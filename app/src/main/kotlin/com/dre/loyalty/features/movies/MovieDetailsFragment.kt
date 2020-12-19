@@ -17,7 +17,7 @@ package com.dre.loyalty.features.movies
 
 import android.os.Bundle
 import android.view.View
-import com.fernandocejas.sample.R
+import com.dre.loyalty.R
 import com.dre.loyalty.core.exception.Failure
 import com.dre.loyalty.core.exception.Failure.NetworkConnection
 import com.dre.loyalty.core.exception.Failure.ServerError

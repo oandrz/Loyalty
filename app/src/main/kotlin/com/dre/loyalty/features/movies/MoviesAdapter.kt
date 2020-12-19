@@ -18,7 +18,7 @@ package com.dre.loyalty.features.movies
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.fernandocejas.sample.R
+import com.dre.loyalty.R
 import com.dre.loyalty.core.extension.inflate
 import com.dre.loyalty.core.extension.loadFromUrl
 import com.dre.loyalty.core.navigation.Navigator

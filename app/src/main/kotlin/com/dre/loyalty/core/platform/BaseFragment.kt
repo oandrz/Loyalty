@@ -16,18 +16,16 @@
 package com.dre.loyalty.core.platform
 
 import android.os.Bundle
-import android.view.View
 import androidx.annotation.StringRes
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.dre.loyalty.AndroidApplication
-import com.fernandocejas.sample.R.color
+import com.dre.loyalty.R.color
 import com.dre.loyalty.core.di.ApplicationComponent
 import com.dre.loyalty.core.extension.appContext
 import com.dre.loyalty.core.extension.viewContainer
 import com.google.android.material.snackbar.Snackbar
-import kotlinx.android.synthetic.main.toolbar.*
 import javax.inject.Inject
 
 /**

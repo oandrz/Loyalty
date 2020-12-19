@@ -7,7 +7,6 @@
 
 package com.dre.loyalty.features.splash.presentation
 
-import android.app.Application
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -16,7 +15,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.dre.loyalty.AndroidApplication
 import com.dre.loyalty.core.di.ApplicationComponent
 import com.dre.loyalty.core.navigation.Navigator
-import com.fernandocejas.sample.databinding.ActivitySplashScreenBinding
+import com.dre.loyalty.databinding.ActivitySplashScreenBinding
 import javax.inject.Inject
 
 class SplashScreenActivity : AppCompatActivity() {
@@ -36,6 +35,7 @@ class SplashScreenActivity : AppCompatActivity() {
         bindView()
         Handler().postDelayed({
             navigator.showMain(this)
+            finish()
         }, SPLASH_DISPLAY_LENGTH)
     }
 

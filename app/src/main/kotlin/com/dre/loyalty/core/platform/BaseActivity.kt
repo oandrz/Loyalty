@@ -17,9 +17,8 @@ package com.dre.loyalty.core.platform
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.dre.loyalty.R
 import com.dre.loyalty.core.extension.inTransaction
-import com.fernandocejas.sample.R
-import kotlinx.android.synthetic.main.toolbar.*
 
 /**
  * Base Activity class with helper methods for handling fragment transactions and back button
