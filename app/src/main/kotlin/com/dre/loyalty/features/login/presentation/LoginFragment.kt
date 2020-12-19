@@ -16,8 +16,6 @@
 package com.dre.loyalty.features.login.presentation
 
 import android.os.Bundle
-import android.telephony.PhoneNumberFormattingTextWatcher
-import android.telephony.PhoneNumberUtils
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.LayoutInflater

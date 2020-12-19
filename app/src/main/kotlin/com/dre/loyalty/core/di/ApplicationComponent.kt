@@ -21,6 +21,7 @@ import com.dre.loyalty.core.navigation.RouteActivity
 import com.dre.loyalty.features.login.presentation.LoginFragment
 import com.dre.loyalty.features.movies.MovieDetailsFragment
 import com.dre.loyalty.features.movies.MoviesFragment
+import com.dre.loyalty.features.splash.presentation.SplashScreenActivity
 import dagger.Component
 import javax.inject.Singleton
 
@@ -29,6 +30,7 @@ import javax.inject.Singleton
 interface ApplicationComponent {
     fun inject(application: AndroidApplication)
     fun inject(routeActivity: RouteActivity)
+    fun inject(activity: SplashScreenActivity)
 
     fun inject(fragment: LoginFragment)
     fun inject(moviesFragment: MoviesFragment)

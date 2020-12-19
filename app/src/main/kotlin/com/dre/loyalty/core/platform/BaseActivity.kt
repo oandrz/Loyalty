@@ -17,8 +17,8 @@ package com.dre.loyalty.core.platform
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.fernandocejas.sample.R
 import com.dre.loyalty.core.extension.inTransaction
+import com.fernandocejas.sample.R
 import kotlinx.android.synthetic.main.toolbar.*
 
 /**
