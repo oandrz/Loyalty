@@ -50,9 +50,7 @@ xmlns:android="http://schemas.android.com/apk/res/android">
     </activity>
 
     <activity
-        android:name="com.dre.loyalty.features.splash.presentation.SplashScreenActivity"
-        android:theme="@style/AppTheme.Translucent"
-        android:label="@string/login_screen_title">
+        android:name="com.dre.loyalty.features.splash.presentation.SplashScreenActivity">
     </activity>
 
 </application>

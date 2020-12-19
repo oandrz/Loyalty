@@ -66,13 +66,11 @@ class MoviesFragment : BaseFragment() {
     private fun loadMoviesList() {
         emptyView.invisible()
         movieList.visible()
-        showProgress()
         moviesViewModel.loadMovies()
     }
 
     private fun renderMoviesList(movies: List<MovieView>?) {
         moviesAdapter.collection = movies.orEmpty()
-        hideProgress()
     }
 
     private fun handleFailure(failure: Failure?) {
@@ -86,7 +84,6 @@ class MoviesFragment : BaseFragment() {
     private fun renderFailure(@StringRes message: Int) {
         movieList.invisible()
         emptyView.visible()
-        hideProgress()
         notifyWithAction(message, R.string.action_refresh, ::loadMoviesList)
     }
 }

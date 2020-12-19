@@ -40,7 +40,7 @@ object ScriptPlugins {
 object Libraries {
     private object Versions {
         const val appCompat = "1.2.0"
-        const val constraintLayout = "2.0.2"
+        const val constraintLayout = "2.0.4"
         const val recyclerView = "1.1.0"
         const val cardView = "1.0.0"
         const val material = "1.1.0"

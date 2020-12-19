@@ -2,7 +2,7 @@
 
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/gray</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowActivityTransitions">true</item>
         <item name="android:windowContentTransitions">true</item>
@@ -25,8 +25,8 @@
     </style>
 
     <style name="BaseToolbarTheme">
-        <item name="android:textColorPrimary">@color/colorTextSecondary</item>
-        <item name="android:textColorSecondary">@color/colorTextPrimary</item>
+        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+        <item name="android:textColorSecondary">@color/colorTextSecondary</item>
     </style>
 
     <style name="CustomTitleTextAppearance" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
@@ -58,6 +58,17 @@
         <item name="android:textSize">@dimen/movie_details_text</item>
         <item name="android:paddingBottom">25dp</item>
         <item name="android:freezesText">true</item>
+    </style>
+
+    <style name="TitleText">
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_20sp</item>
+    </style>
+
+    <style name="NormalText">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/text_size_12sp</item>
     </style>
 
 </resources>
