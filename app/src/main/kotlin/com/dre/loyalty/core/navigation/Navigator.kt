@@ -24,6 +24,7 @@ import android.widget.ImageView
 import androidx.core.app.ActivityOptionsCompat
 import androidx.fragment.app.FragmentActivity
 import com.dre.loyalty.core.extension.empty
+import com.dre.loyalty.features.authenticationselector.presentation.AuthenticationSelectorActivity
 import com.dre.loyalty.features.login.data.Authenticator
 import com.dre.loyalty.features.login.presentation.LoginActivity
 import com.dre.loyalty.features.movies.MovieDetailsActivity
@@ -38,14 +39,17 @@ import javax.inject.Singleton
 @Singleton
 class Navigator @Inject constructor(private val authenticator: Authenticator) {
 
-    private fun showLogin(context: Context) = context.startActivity(LoginActivity.callingIntent(context))
-
     fun showMain(context: Context) {
         when (authenticator.userLoggedIn()) {
             true -> showMovies(context)
-            false -> showLogin(context)
+            false -> showAuthSelector(context)
         }
     }
+
+    fun showLogin(context: Context) = context.startActivity(LoginActivity.callingIntent(context))
+
+    private fun showAuthSelector(context: Context) =
+        context.startActivity(AuthenticationSelectorActivity.callingIntent(context))
 
     private fun showMovies(context: Context) = context.startActivity(MoviesActivity.callingIntent(context))
 

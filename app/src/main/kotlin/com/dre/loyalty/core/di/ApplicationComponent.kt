@@ -18,6 +18,7 @@ package com.dre.loyalty.core.di
 import com.dre.loyalty.AndroidApplication
 import com.dre.loyalty.core.di.viewmodel.ViewModelModule
 import com.dre.loyalty.core.navigation.RouteActivity
+import com.dre.loyalty.features.authenticationselector.presentation.AuthenticationSelectorFragment
 import com.dre.loyalty.features.login.presentation.LoginFragment
 import com.dre.loyalty.features.movies.MovieDetailsFragment
 import com.dre.loyalty.features.movies.MoviesFragment
@@ -33,6 +34,7 @@ interface ApplicationComponent {
     fun inject(activity: SplashScreenActivity)
 
     fun inject(fragment: LoginFragment)
+    fun inject(fragment: AuthenticationSelectorFragment)
     fun inject(moviesFragment: MoviesFragment)
     fun inject(movieDetailsFragment: MovieDetailsFragment)
 }

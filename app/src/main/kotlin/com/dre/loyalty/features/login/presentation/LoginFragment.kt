@@ -81,8 +81,8 @@ class LoginFragment : BaseFragment() {
         }
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
+    override fun onDetach() {
+        super.onDetach()
         binding?.etPhone?.removeTextChangedListener(phoneChangeListener)
         binding = null
     }

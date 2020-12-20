@@ -53,6 +53,10 @@ xmlns:android="http://schemas.android.com/apk/res/android">
         android:name="com.dre.loyalty.features.splash.presentation.SplashScreenActivity">
     </activity>
 
+    <activity
+        android:name=".features.authenticationselector.presentation.AuthenticationSelectorActivity">
+    </activity>
+
 </application>
 
 </manifest>

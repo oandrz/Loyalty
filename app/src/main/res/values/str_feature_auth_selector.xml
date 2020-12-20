@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~  Created by Andreas Oentoro on 12/20/20 3:04 PM
+  ~  Copyright (c) 2020 . All rights reserved.
+  ~  Last modified 12/20/20 3:04 PM
+  ~  Github Profile: https://github.com/oandrz
+  -->
+
+<resources>
+    <string name="authselector_screen_label_hospital">Altea Hospital</string>
+
+</resources>
