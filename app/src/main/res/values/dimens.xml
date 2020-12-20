@@ -22,4 +22,5 @@
     <dimen name="space_16dp">16dp</dimen>
     <dimen name="space_20dp">20dp</dimen>
     <dimen name="space_24dp">24dp</dimen>
+    <dimen name="space_48dp">48dp</dimen>
 </resources>

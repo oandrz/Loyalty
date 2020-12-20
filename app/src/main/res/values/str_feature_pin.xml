@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="pin_screen_title">Pin</string>
+    <string name="pin_screen_title">Masukkan pin kamu</string>
+    <string name="pin_screen_label_forgotpin">Lupa pin? Atur ulang pin</string>
 </resources>

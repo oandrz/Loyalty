@@ -20,6 +20,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.dre.loyalty.features.login.presentation.LoginViewModel
 import com.dre.loyalty.features.movies.MovieDetailsViewModel
 import com.dre.loyalty.features.movies.MoviesViewModel
+import com.dre.loyalty.features.pin.presentation.PinViewModel
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap
@@ -33,6 +34,11 @@ abstract class ViewModelModule {
     @IntoMap
     @ViewModelKey(LoginViewModel::class)
     abstract fun provideLoginViewModel(vm: LoginViewModel): ViewModel
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(PinViewModel::class)
+    abstract fun providePinViewModel(vm: PinViewModel): ViewModel
 
     @Binds
     @IntoMap

@@ -23,6 +23,7 @@ import com.dre.loyalty.features.login.presentation.LoginFragment
 import com.dre.loyalty.features.register.presentation.RegisterFragment
 import com.dre.loyalty.features.movies.MovieDetailsFragment
 import com.dre.loyalty.features.movies.MoviesFragment
+import com.dre.loyalty.features.pin.presentation.PinFragment
 import com.dre.loyalty.features.splash.presentation.SplashScreenActivity
 import dagger.Component
 import javax.inject.Singleton
@@ -36,6 +37,7 @@ interface ApplicationComponent {
 
     fun inject(fragment: RegisterFragment)
     fun inject(fragment: LoginFragment)
+    fun inject(fragment: PinFragment)
     fun inject(fragment: AuthenticationSelectorFragment)
     fun inject(moviesFragment: MoviesFragment)
     fun inject(movieDetailsFragment: MovieDetailsFragment)

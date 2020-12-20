@@ -17,5 +17,5 @@ class LoginActivity : BaseActivity() {
         fun callingIntent(context: Context) = Intent(context, LoginActivity::class.java)
     }
 
-    override fun fragment() = RegisterFragment()
+    override fun fragment() = LoginFragment()
 }
