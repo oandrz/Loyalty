@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~  Created by Andreas Oentoro on 12/20/20 3:28 PM
+  ~  Copyright (c) 2020 . All rights reserved.
+  ~  Last modified 12/20/20 3:28 PM
+  ~  Github Profile: https://github.com/oandrz
+  -->
+
+<resources>
+    <string name="register_screen_title">Daftar</string>
+    <string name="register_screen_btn_login">Log in</string>
+    <string name="register_screen_subdescription">Daftar dengan nomor HP kamu yang aktif ya</string>
+    <string name="register_screen_btn_register">Daftar</string>
+    <string name="register_screen_label_login">Sudah punya akun?</string>
+</resources>

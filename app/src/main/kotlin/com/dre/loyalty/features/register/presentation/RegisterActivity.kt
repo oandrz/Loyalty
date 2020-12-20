@@ -5,16 +5,15 @@
  *  Github Profile: https://github.com/oandrz
  */
 
-package com.dre.loyalty.features.login.presentation
+package com.dre.loyalty.features.register.presentation
 
 import android.content.Context
 import android.content.Intent
 import com.dre.loyalty.core.platform.BaseActivity
-import com.dre.loyalty.features.register.presentation.RegisterFragment
 
-class LoginActivity : BaseActivity() {
+class RegisterActivity : BaseActivity() {
     companion object {
-        fun callingIntent(context: Context) = Intent(context, LoginActivity::class.java)
+        fun callingIntent(context: Context) = Intent(context, RegisterActivity::class.java)
     }
 
     override fun fragment() = RegisterFragment()

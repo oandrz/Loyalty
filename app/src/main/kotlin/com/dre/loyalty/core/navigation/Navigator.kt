@@ -31,6 +31,7 @@ import com.dre.loyalty.features.movies.MovieDetailsActivity
 import com.dre.loyalty.features.movies.MovieView
 import com.dre.loyalty.features.movies.MoviesActivity
 import com.dre.loyalty.features.pin.presentation.PinActivity
+import com.dre.loyalty.features.register.presentation.RegisterActivity
 import com.dre.loyalty.features.splash.presentation.SplashScreenActivity
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -47,6 +48,7 @@ class Navigator @Inject constructor(private val authenticator: Authenticator) {
     }
 
     fun showLogin(context: Context) = context.startActivity(LoginActivity.callingIntent(context))
+    fun showRegister(context: Context) = context.startActivity(RegisterActivity.callingIntent(context))
 
     private fun showAuthSelector(context: Context) =
         context.startActivity(AuthenticationSelectorActivity.callingIntent(context))

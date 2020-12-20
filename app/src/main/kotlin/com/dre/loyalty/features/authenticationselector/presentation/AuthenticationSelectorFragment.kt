@@ -47,7 +47,7 @@ class AuthenticationSelectorFragment : BaseFragment() {
 
         binding.btnRegister.setOnClickListener {
             activity?.let {
-                navigator.showLogin(it)
+                navigator.showRegister(it)
             }
         }
     }

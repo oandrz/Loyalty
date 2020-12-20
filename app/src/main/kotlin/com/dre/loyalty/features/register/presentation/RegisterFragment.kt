@@ -5,7 +5,7 @@
  *  Github Profile: https://github.com/oandrz
  */
 
-package com.dre.loyalty.features.login.presentation
+package com.dre.loyalty.features.register.presentation
 
 import android.os.Bundle
 import android.text.Editable
@@ -15,14 +15,16 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.text.isDigitsOnly
+import com.dre.loyalty.R
 import com.dre.loyalty.core.extension.observe
 import com.dre.loyalty.core.extension.viewModel
 import com.dre.loyalty.core.navigation.Navigator
 import com.dre.loyalty.core.platform.BaseFragment
 import com.dre.loyalty.databinding.FragmentAuthFormBinding
+import com.dre.loyalty.features.login.presentation.LoginViewModel
 import javax.inject.Inject
 
-class LoginFragment : BaseFragment() {
+class RegisterFragment : BaseFragment() {
 
     @Inject
     lateinit var navigator: Navigator
@@ -41,11 +43,11 @@ class LoginFragment : BaseFragment() {
         override fun afterTextChanged(s: Editable?) {
             if (s.toString().length > 2) {
                 if (s?.substring(0, 3) != "62" && s?.firstOrNull() != '0') {
-                    binding?.etPhone?.error = "Not Correct Phone Number Format"
+                    binding!!.etPhone.error = "Not Correct Phone Number Format"
                 }
             }
             if (s?.isDigitsOnly() == false) {
-                binding?.etPhone?.error = "Not Correct Phone Number Format"
+                binding!!.etPhone.error = "Not Correct Phone Number Format"
             }
         }
     }
@@ -66,16 +68,21 @@ class LoginFragment : BaseFragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentAuthFormBinding.inflate(inflater, container, false)
-        return binding?.root!!
+        return binding!!.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        (activity as AppCompatActivity).setSupportActionBar(binding?.toolbarLayout?.toolbar)
         binding?.run {
+            (activity as AppCompatActivity).setSupportActionBar(toolbarLayout.toolbar)
+            tvLogin.setText(R.string.register_screen_title)
+            tvDescription.setText(R.string.register_screen_subdescription)
+            btnLogin.setText(R.string.register_screen_btn_register)
             btnLogin.setOnClickListener {
                 vm.handleLoginButtonClicked()
             }
+            tvLabelRegister.setText(R.string.register_screen_label_login)
+            btnRegister.setText(R.string.register_screen_btn_login)
             etPhone.addTextChangedListener(phoneChangeListener)
         }
     }
