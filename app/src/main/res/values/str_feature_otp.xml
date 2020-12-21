@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~  Created by Andreas Oentoro on 12/20/20 4:58 PM
+  ~  Copyright (c) 2020 . All rights reserved.
+  ~  Last modified 12/20/20 4:58 PM
+  ~  Github Profile: https://github.com/oandrz
+  -->
+
+<resources>
+    <string name="otp_screen_title">Kode verifikasi sudah dikirim!</string>
+    <string name="otp_screen_format_phonedesc">Masukkan kode verifikasi yang sudah kami SMS ke nomor HP kamu (%s)</string>
+    <string name="otp_screen_label_codenotfound">Tidak menerima kode?</string>
+    <string name="otp_screen_button_resend">Kirim ulang</string>
+</resources>
